@@ -6,11 +6,11 @@ var fs = require('fs');
   buf = new Buffer(256);
   buf = fs.readFileSync('index.html');
 
-var str = buf.toString()
+var str = buf.toString();
 
-var sss='olololololol'
+var sss='olololololol';
 app.get('/', function(request, response) {
-  response.send(sss);
+  response.send('hell');
 });
 
 var port = process.env.PORT || 5000;
